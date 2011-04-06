@@ -1,5 +1,6 @@
+ď»ż<!doctype html>
 <head>
-	<meta charset="cp1250">
+	<meta charset="utf-8">
 	<title>Orion - Introduction</title>
 	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
 	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
@@ -20,10 +21,10 @@ SyntaxHighlighter.config.bloggerMode = true;
 <h1>Orion - Introduction</h1>
 
 <a href="mailto:Szymon.Brandys@pl.ibm.com">Szymon Brandys</a><br>
-<a href="mailto:Tomasz.Zarna@pl.ibm.com">Tomasz Żarna</a><br>
+<a href="mailto:Tomasz.Zarna@pl.ibm.com">Tomasz Ĺ»arna</a><br>
 
 IBM<br>
-Eclipse Platform & Orion
+Eclipse Platform &amp; Orion
 </div>
 
 <div>
@@ -33,7 +34,7 @@ Eclipse Platform & Orion
 <li>A glance at web technologies</li>
 <li>More about Orion</li>
 <li>Demos</li>
-<li>Discussion and Q&A</li>
+<li>Discussion and Q&amp;A</li>
 </ul>
 </div>
 
@@ -52,13 +53,13 @@ Eclipse Platform & Orion
 <h2>Use Strengths of the Web</h2>
 <ul>
 <li>zero install on the client</li>
-<li>simple connectivity – links</li>
+<li>simple connectivity - links</li>
 <li>trivial update mechanism</li>
 <li>powerful rendering engine</li>
 <li>look and feel easy to adapt</li>
 <li>large, active community</li>
 <li>innovation by everyone</li>
-<li>no central “IDE”</li>
+<li>no central "IDE"</li>
 <li>artifacts all over the web</li>
 <li>highly distributed content</li>
 <li>refresh the page</li>
@@ -108,25 +109,25 @@ Eclipse Platform & Orion
 }
 </pre>
 
-<li><b>OpenID</b> – a standard that describes how users can authenticated in a decentralized manner</li>
-<li><b>OAuth</b> – an open standard for authorization, which allows users to share their private resources  stored on one site with another site without having to hand out their credentials</li>
+<li><b>OpenID</b> - a standard that describes how users can authenticated in a decentralized manner</li>
+<li><b>OAuth</b> - an open standard for authorization, which allows users to share their private resources  stored on one site with another site without having to hand out their credentials</li>
 </ul>
 </div>
 
 <div>
 <h2>Assumptions</h2>
 <ul>
-	<li>Software development in a browser</li>
+	<li>Software development in a browser
 	<ul>
 		<li>editing</li>
 		<li>navigating folders</li>
 		<li>searching</li>
 		<li>working with SCM</li>
-	</ul>
-	<li>Set of linked web pages, <b><u>NOT an IDE running in a browser</u></b></li>
+	</ul></li>
+	<li>Set of linked web pages, <b>NOT an IDE running in a browser</b>
 	<ul> 
 		<li>easy to integrate other functionality even if hosted on different servers</li>
-	</ul>
+	</ul></li>
 </ul>
 </div>
 
@@ -171,10 +172,10 @@ Eclipse Platform & Orion
 <h2>Design Principles</h2>
 <ul>
 <li>Regular hyperlinks, back button, bookmarking, link sharing</li>
-<li>Functionality on separate pages: <b><u>Page = Task + Resource</u></b></li>
+<li>Functionality on separate pages: <b>Page = Task + Resource</b></li>
 <li>Performant and Lightweight. Speed trumps power.</li>
 <li>Components should have value on their own.</li>
-<li>Low barrier of entry for adopters. Don’t require technology buy-in.</li>
+<li>Low barrier of entry for adopters. Don't require technology buy-in.</li>
 </ul>
 </div>
 
@@ -197,7 +198,7 @@ Eclipse Platform & Orion
 <div>
 <h2>Integration Possibilities</h2>
 <ul>
-	<li>Client-side “plug-ins” : adding commands to existing UI</li>
+	<li>Client-side "plug-ins" : adding commands to existing UI
 	<ul>
 		<li>Integrate with SCMs:</li>
 		<ul>
@@ -206,26 +207,31 @@ Eclipse Platform & Orion
 		</ul>
 	<li>W3C validator, JSLint, ...</li>
 	</ul>
+	</li>
 	<li>Hyperlink integration
 	<ul>
 		<li>Bugzilla, Gerrit, <a href="http://git.eclipse.org/c/e4/org.eclipse.orion.server.git/stats">SCM stats</a></li>
 	</ul>
+	</li>
 	<li>Integrate with browser debuggers:
 	<ul>
 		<li><a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Firebug_Integration">Firebug</a>, WebKit Inspector</li>
 	</ul>
+	</li>
 	<li>Host additional UI components, e.g. OpenSocial Gadgets</li>
 	<li>Server-side
 	<ul>
 		<li><a href="http://open-services.net/">OSLC</a>: Consume and produce server APIs</li>
 	</ul>
-	<li>Web-Based integration</li>
+	</li>
+	<li>Web-Based integration
 	<ul>
-		<li><a href="http://initializr.com/">initializr.com</a> - equivalent of “New Project” wizard</li>
-		<li><a href="http://smush.it/">smush.it</a> - lossless “compression” of images</li>
+		<li><a href="http://initializr.com/">initializr.com</a> - equivalent of "New Project" wizard</li>
+		<li><a href="http://smush.it/">smush.it</a> - lossless "compression" of images</li>
 		<li><a href="http://spritegen.website-performance.org/">CSS Sprite Generator</a></li>
 		<li><a href="jsbeautifier.org">jsbeautifier.org</a> - JavaScript code formatter</li>
 	</ul>
+	</li>
 </ul>
 </div>
 
@@ -236,7 +242,7 @@ Eclipse Platform & Orion
 <li>Create project on <a href="initializr.com">initializr.com</a></li>
 <li>Import zip</li>
 <li><strike>Disable jslint</strike></li>
-<li>Add <a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Extending_the_editor_with_a_Plug-in">JSBeautifier<a> plugin</li>
+<li>Add <a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Extending_the_editor_with_a_Plug-in">JSBeautifier</a> plugin</li>
 <li>Go to page (comment in log)</li>
 </ul>
 </div>
@@ -246,22 +252,26 @@ Eclipse Platform & Orion
 <ul>
 <li>Homepage / OrionHub: <a href="http://eclipse.org/orion">http://eclipse.org/orion</a></li>
 <li>Installing on localhost: http://wiki.eclipse.org/Orion/How_Tos/Install_Orion_on_Localhost</li>
-<li><a href="http://wiki.eclipse.org/Orion/Getting_the_source#Getting_the_Source_onto_your_computer">Clonning</a>:</li>
-	<ul>
+<li><a href="http://wiki.eclipse.org/Orion/Getting_the_source#Getting_the_Source_onto_your_computer">Clonning</a>:
+<ul>
 	<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.client.git</li>
 	<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.server.git</li>
 	</ul>
-<li>https://github.com/eclipse</li>
-	<ul>
+</li>
+<li>https://github.com/eclipse
+<ul>
 	<li>orion-client</li>
 	<li>orion-server</li>
+	</ul>
+</li>
+
 </ul>
 </div>
 
 <div>
 <h2>The End</h2>
 <ul>
-<li>Q&A</li>
+<li>Q&amp;A</li>
 <li>Thank you</li>
 </ul>
 </div>

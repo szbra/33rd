@@ -1,3 +1,178 @@
+<head>
+	<meta charset="cp1250">
+	<title>Orion - Introduction</title>
+</head>
 <body>
+<h1>Orion - Introduction</h1>
+
+<a href="mailto:Szymon.Brandys@pl.ibm.com">Szymon Brandys</a><br>
+<a href="mailto:Tomasz.Zarna@pl.ibm.com">Tomasz Żarna</a><br>
+
+IBM<br>
+Eclipse Platform & Orion
+<hr>
+<h2>Agenda</h2>
+<li>What is Orion?
+<li>A glance at web technologies
+<li>More about Orion
+<li>Demo
+<li>Discussion and Q&A
+
+<hr>
+<h2>Goals of Orion</h2>
+<li>Build developer tooling that works in a browser ,
+<li>at web scale,
+<li>integrating well with existing tools that exist on the web,
+<li>based on well - proven web architectures - REST, HTTP, JSON, OAuth, OpenID, and others.
+
+<hr>
+<h2>Use Strengths of the Web</h2>
+<li>zero install on the client
+<li>simple connectivity – links
+<li>trivial update mechanism
+<li>powerful rendering engine
+<li>look and feel easy to adapt
+<li>large, active community
+<li>innovation by everyone
+<li>no central “IDE”
+<li>artifacts all over the web
+<li>highly distributed content
+<li>refresh the page
+<li>scalable computing power
+
+<hr>
+<h2>Why work on this now?</h2>
+<li>There are other online IDEs already, extremely high rate of innovation in online tools for web development
+<li>We need to start now, learn, fail, try again, in order to become a player in this space
+<li>We (IBM) would like to see a community to form around this forms at Eclipse, and are contributing a seed
+
+<hr>
+<h2>A Glance at Web Architectures - REST</h2>
+<p>An important concept in REST is the existence of resources (sources of specific information), each of which is referenced with a global identifier (e.g., a URI in HTTP). In order to manipulate these resources, components of the network (user agents and origin servers) communicate via a standardized interface (e.g., HTTP) and exchange representations of these resources (the actual documents conveying the information).</p>
+
+http://en.wikipedia.org/wiki/Representational_State_Transfer<br>
+http://prescod.net/rest/mistakes/
+
+<hr>
+<h2>A Glance at Web Architectures</h2>
+<li><b>HTTP</b> - a networking protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the WWW
+<li><b>Ajax</b> - a group of interrelated web developmentt methods used on the client-side to create interactive web applications. With Ajax, web applications can retrieve data from the server asynchronously in the background 
+<li><b>JSON</b> - a lightweight text-based open standard designed for human-readable data interchange
+<li><b>OpenID</b> – a standard that describes how users can authenticated in a decentralized manner
+<li><b>OAuth</b> – an open standard for authorization, which allows users to share their private resources  stored on one site with another site without having to hand out their credentials
+
+<hr>
+<h2>Assumptions</h2>
+<ul>
+<li>Software development in a browser
+<ul>
+<li>editing
+<li>navigating folders
+<li>searching
+<li>working with SCM
+</ul>
+<li>Set of linked web pages, NOT an IDE running in a browser
+<ul> 
+<li>easy to integrate other functionality even if hosted on different servers
+</ul>
+</ul>
+
+<hr>
+<h2>Why Not an IDE in a Browser?</h2>
+<a href="http://cloud9ide.com/signin.html">Cloud9 IDE</a>
+
+<hr>
+<h2>Context: Already in a Browser</h2>
+<ul>
+<li>Bug tracking (Bugzilla, JIRA, Trac, Lighthouse, Rational RTC)
+<li>Builds (Hudson/Jenkins)
+<li>Code review (Bugzilla, Gerrit, GitHub)
+<li>Documentation, code snippets (pastebin, Gist)
+<li>Browsing code repositories (GitHub, ViewCVS, Rational RTC)
+<li>Debugger (Firebug, WebKit Inspector, Developer Tools)
+</ul>
+
+<hr>
+<h2>What's Missing? Not Much</h2>
+<ul>
+<li>Code editor
+<li>Navigator
+<li>Work with SCM (commit, compare, merge, etc)
+<li>Indexing - full text search
+<li>Unit tests
+<br>
+<br>
+<li>Initial focus on web developers working on client-side JavaScript, HTML, CSS
+</ul>
+
+<hr>
+<h2>Design Principles</h2>
+<ul>
+<li>Regular hyperlinks, back button, bookmarking, link sharing
+<li>Functionality on separate pages: <b><u>Page = Task + Resource</u></b>
+<li>Performant and Lightweight. Speed trumps power.
+<li>Components should have value on their own.
+<li>Low barrier of entry for adopters. Don’t require technology buy-in.
+</ul>
+
+<hr>
+<h2>Demo</h2>
+<a href="http://localhost:8080/index.html">Orion</a>
+
+<hr>
+<h2>Integration Possibilities</h2>
+<ul>
+<li>Client-side “plug-ins” : adding commands to existing UI
+	<ul>
+		<li>Integrate with SCMs: 
+		<ul>
+			<li>Git is used to speed up self-hosting
+			<li>There is ongoing effort on enabling RTC in Orion
+		</ul>
+	<li>W3C validator, JSLint, ...
+	</ul>
+<li>Hyperlink integration
+	<ul><li>Bugzilla, Gerrit, SCM stats</ul>
+<li>Integrate with browser debuggers:
+	<ul><li>Firebug, WebKit Inspector</ul>
+<li>Host additional UI components, e.g. OpenSocial Gadgets
+<li>Server-side
+	<ul><li>OSLC: Consume and produce server APIs</ul>
+<li>Web-Based integration 
+	<ul>
+	<li>initializr.com - equivalent of “New Project” wizard
+	<li>smush.it - lossless “compression” of images
+	<li>CSS Sprite Generator 
+	<li>jsbeautifier.org - JavaScript code formatter
+	</ul>
+</ul>
+
+<hr>
+<h2>Getting Started</h2>
+<ul>
+<li>Homepage / OrionHub: http://eclipse.org/orion
+<li>Installing on localhost: http://wiki.eclipse.org/Orion/How_Tos/Install_Orion_on_Localhost
+<li>Clonning:
+	<ul>
+	<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.client.git
+	<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.server.git
+	</ul>
+<li>https://github.com/eclipse
+	<ul>
+	<li>orion-client
+	<li>orion-server
+</ul>
+
+<hr>
+<h2>The End</h2>
+<li>Q&A
+<li>Thank you
+
+<hr>
+<h2>Legal Notice</h2>
+<li>IBM and the IBM logo are trademarks or registered trademarks of IBM Corporation, in the United States, other countries or both.
+<li>Java and all Java-based marks, among others, are trademarks or registered trademarks of Sun Microsystems in the United States, other countries or both.
+<li>Eclipse and the Eclipse logo are trademarks of Eclipse Foundation, Inc.
+<li>Other company, product and service names may be trademarks or service marks of others.
 
 </body>

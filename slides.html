@@ -1,6 +1,19 @@
 <head>
 	<meta charset="cp1250">
 	<title>Orion - Introduction</title>
+	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
+	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'></script>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shLegacy.js' type='text/javascript'></script>
+<script type='text/javascript'>
+SyntaxHighlighter.all();
+dp.SyntaxHighlighter.HighlightAll('code');
+SyntaxHighlighter.config.bloggerMode = true;
+</script>
+
 </head>
 <body>
 <h1>Orion - Introduction</h1>
@@ -70,6 +83,24 @@ Eclipse Platform & Orion
 <li><b>HTTP</b> - a networking protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the WWW
 <li><b>Ajax</b> - a group of interrelated web developmentt methods used on the client-side to create interactive web applications. With Ajax, web applications can retrieve data from the server asynchronously in the background 
 <li><b>JSON</b> - a lightweight text-based open standard designed for human-readable data interchange
+
+<pre class="brush: xml">
+&lt;value>
+	&lt;array>
+		&lt;data>
+			&lt;value>&lt;int>3&lt;/int>&lt;/value>
+			&lt;value>&lt;string>three&lt;/string>&lt;/value>
+		&lt;/data>
+	&lt;/array>
+&lt;/value>
+</pre>
+
+<pre class="brush: js">
+{
+	[3, "three"]
+}
+</pre>
+
 <li><b>OpenID</b> – a standard that describes how users can authenticated in a decentralized manner
 <li><b>OAuth</b> – an open standard for authorization, which allows users to share their private resources  stored on one site with another site without having to hand out their credentials
 </div>

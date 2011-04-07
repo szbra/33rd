@@ -1,98 +1,138 @@
 ﻿<!doctype html>
 <head>
-	<meta charset="utf-8">
-	<title>Orion - Introduction</title>
-	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
-	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
-	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
-	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'></script>
-	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script>
-	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script>
-	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shLegacy.js' type='text/javascript'></script>
+<meta charset="utf-8">
+<title>Orion - Introduction</title>
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css'
+	rel='stylesheet' type='text/css' />
+<link
+	href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css'
+	rel='stylesheet' type='text/css' />
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js'
+	type='text/javascript'></script>
+<script
+	src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js'
+	type='text/javascript'></script>
+<script
+	src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js'
+	type='text/javascript'></script>
+<script
+	src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js'
+	type='text/javascript'></script>
+<script
+	src='http://alexgorbatchev.com/pub/sh/current/scripts/shLegacy.js'
+	type='text/javascript'></script>
 <script type='text/javascript'>
-SyntaxHighlighter.all();
-dp.SyntaxHighlighter.HighlightAll('code');
-SyntaxHighlighter.config.bloggerMode = true;
+	SyntaxHighlighter.all();
+	dp.SyntaxHighlighter.HighlightAll('code');
+	SyntaxHighlighter.config.bloggerMode = true;
 </script>
-<style type="text/css">@import "slides.css";</style>
+<style type="text/css">
+@import "slides.css";
+</style>
 </head>
 <body>
-<div>
-<h1>Orion - Introduction</h1>
 
-<a href="mailto:Szymon.Brandys@pl.ibm.com">Szymon Brandys</a><br>
-<a href="mailto:Tomasz.Zarna@pl.ibm.com">Tomasz Żarna</a><br>
+	<div>
+		<h1>Orion - Introduction</h1>
 
-IBM<br>
-Eclipse Platform &amp; Orion
-</div>
+		<a href="mailto:Szymon.Brandys@pl.ibm.com">Szymon Brandys</a><br>
+		<a href="mailto:Tomasz.Zarna@pl.ibm.com">Tomasz Żarna</a><br> IBM<br>
+		Eclipse Platform &amp; Orion
+	</div>
 
-<div>
-<h2>Agenda</h2>
-<ul>
-<li>What is Orion?</li>
-<li>A glance at web technologies</li>
-<li>More about Orion</li>
-<li>Demos</li>
-<li>Discussion and Q&amp;A</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>Agenda</h2>
+		<ul>
+			<li>What is Orion?</li>
+			<li>A glance at web technologies</li>
+			<li>More about Orion</li>
+			<li>Demos</li>
+			<li>Discussion and Q&amp;A</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<div>
+	<div>
+		<p id="header">
+		<h2>Goals of Orion</h2>
+		<ul>
+			<li>Build developer tooling that works in a browser,</li>
+			<li>at web scale,</li>
+			<li>integrating well with existing tools that exist on the web,</li>
+			<li>based on well - proven web architectures - REST, HTTP, JSON,
+				OAuth, OpenID, and others.</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<h2>Goals of Orion</h2>
-<ul>
-<li>Build developer tooling that works in a browser,</li>
-<li>at web scale,</li>
-<li>integrating well with existing tools that exist on the web,</li>
-<li>based on well - proven web architectures - REST, HTTP, JSON, OAuth, OpenID, and others.</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>Use Strengths of the Web</h2>
+		<ul>
+			<li>zero install on the client</li>
+			<li>simple connectivity - links</li>
+			<li>trivial update mechanism</li>
+			<li>powerful rendering engine</li>
+			<li>look and feel easy to adapt</li>
+			<li>large, active community</li>
+			<li>innovation by everyone</li>
+			<li>no central "IDE"</li>
+			<li>artifacts all over the web</li>
+			<li>highly distributed content</li>
+			<li>refresh the page</li>
+			<li>scalable computing power</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<div>
-<h2>Use Strengths of the Web</h2>
-<ul>
-<li>zero install on the client</li>
-<li>simple connectivity - links</li>
-<li>trivial update mechanism</li>
-<li>powerful rendering engine</li>
-<li>look and feel easy to adapt</li>
-<li>large, active community</li>
-<li>innovation by everyone</li>
-<li>no central "IDE"</li>
-<li>artifacts all over the web</li>
-<li>highly distributed content</li>
-<li>refresh the page</li>
-<li>scalable computing power</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>Why work on this now?</h2>
+		<ul>
+			<li>There are other online IDEs already, extremely high rate of
+				innovation in online tools for web development</li>
+			<li>We need to start now, learn, fail, try again, in order to
+				become a player in this space</li>
+			<li>We (IBM) would like to see a community to form around this
+				forms at Eclipse, and are contributing a seed</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<div>
-<h2>Why work on this now?</h2>
-<ul>
-<li>There are other online IDEs already, extremely high rate of innovation in online tools for web development</li>
-<li>We need to start now, learn, fail, try again, in order to become a player in this space</li>
-<li>We (IBM) would like to see a community to form around this forms at Eclipse, and are contributing a seed</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>A Glance at Web Architectures - REST</h2>
+		<p>An important concept in REST is the existence of resources
+			(sources of specific information), each of which is referenced with a
+			global identifier (e.g., a URI in HTTP). In order to manipulate these
+			resources, components of the network (user agents and origin servers)
+			communicate via a standardized interface (e.g., HTTP) and exchange
+			representations of these resources (the actual documents conveying
+			the information).</p>
 
-<div>
-<h2>A Glance at Web Architectures - REST</h2>
-<p>An important concept in REST is the existence of resources (sources of specific information), each of which is referenced with a global identifier (e.g., a URI in HTTP). In order to manipulate these resources, components of the network (user agents and origin servers) communicate via a standardized interface (e.g., HTTP) and exchange representations of these resources (the actual documents conveying the information).</p>
+		<a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">http://en.wikipedia.org/wiki/Representational_State_Transfer</a><br>
+		<a href="http://prescod.net/rest/mistakes/">http://prescod.net/rest/mistakes/"</a>
+		
+		<p id="footer">
+	</div>
 
-<a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">http://en.wikipedia.org/wiki/Representational_State_Transfer</a><br>
-<a href="http://prescod.net/rest/mistakes/">http://prescod.net/rest/mistakes/"</a>
-</div>
+	<div>
+		<p id="header">
+		<h2>A Glance at Web Architectures</h2>
+		<ul>
+			<li><b>HTTP</b> - a networking protocol for distributed,
+				collaborative, hypermedia information systems. HTTP is the
+				foundation of data communication for the WWW</li>
+			<li><b>Ajax</b> - a group of interrelated web developmentt
+				methods used on the client-side to create interactive web
+				applications. With Ajax, web applications can retrieve data from the
+				server asynchronously in the background</li>
+			<li><b>JSON</b> - a lightweight text-based open standard
+				designed for human-readable data interchange</li>
 
-<div>
-<h2>A Glance at Web Architectures</h2>
-<ul>
-<li><b>HTTP</b> - a networking protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the WWW</li>
-<li><b>Ajax</b> - a group of interrelated web developmentt methods used on the client-side to create interactive web applications. With Ajax, web applications can retrieve data from the server asynchronously in the background </li>
-<li><b>JSON</b> - a lightweight text-based open standard designed for human-readable data interchange</li>
 
-
-<pre class="brush: xml">
+			<pre class="brush: xml">
 &lt;value>
 	&lt;array>
 		&lt;data>
@@ -103,187 +143,271 @@ Eclipse Platform &amp; Orion
 &lt;/value>
 </pre>
 
-<pre class="brush: js">
+			<pre class="brush: js">
 {
 	[3, "three"]
 }
 </pre>
 
-<li><b>OpenID</b> - a standard that describes how users can authenticated in a decentralized manner</li>
-<li><b>OAuth</b> - an open standard for authorization, which allows users to share their private resources  stored on one site with another site without having to hand out their credentials</li>
-</ul>
-</div>
-
-<div>
-<h2>Assumptions</h2>
-<ul>
-	<li>Software development in a browser
-	<ul>
-		<li>editing</li>
-		<li>navigating folders</li>
-		<li>searching</li>
-		<li>working with SCM</li>
-	</ul></li>
-	<li>Set of linked web pages, <b>NOT an IDE running in a browser</b>
-	<ul> 
-		<li>easy to integrate other functionality even if hosted on different servers</li>
-	</ul></li>
-</ul>
-</div>
-
-<div>
-<h2>Why Not an IDE in a Browser?</h2>
-<a href="http://cloud9ide.com/signin.html">Cloud9 IDE</a><br>
-<ul>
-<li>tabs</li>
-<li>menu items</li>
-<li>files tree</li>
-<li>dialogs</li>
-</ul>
-</div>
-
-<div>
-<h2>Context: Already in a Browser</h2>
-<ul>
-<li>Bug tracking (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=341953">Bugzilla</a>, JIRA, Trac, Lighthouse, Rational RTC)</li>
-<li>Builds (<a href="https://hudson.eclipse.org/hudson/?">Hudson</a>/Jenkins)</li>
-<li>Code review (Bugzilla, <a href="http://egit.eclipse.org/r/#change,3008">Gerrit</a>, GitHub)</li>
-<li>Documentation (<a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/running_eclipse.htm">Eclipse Help</a>), code snippets (<a href="http://pastebin.com/">pastebin</a>, <a href="https://gist.github.com/gists">Gist</a>), <a href="http://www.google.com">Google</a></li>
-<li>Browsing code repositories (<a href="https://github.com/zaza/33rd">GitHub</a>, <a href="http://dev.eclipse.org/viewcvs/viewvc.cgi?view=roots">ViewCVS</a>, Rational RTC)</li>
-<li>Debugger (<a href="http://getfirebug.com/">Firebug</a>, WebKit Inspector, Developer Tools)</li>
-</ul>
-</div>
-
-<div>
-<h2>What's Missing? Not Much</h2>
-<ul>
-<li>Code editor</li>
-<li>Navigator</li>
-<li>Work with SCM (commit, compare, merge, etc)</li>
-<li>Indexing - full text search</li>
-<li>Unit tests</li>
-<br>
-<br>
-<li>Initial focus on web developers working on client-side JavaScript, HTML, CSS</li>
-</ul>
-</div>
-
-<div>
-<h2>Design Principles</h2>
-<ul>
-<li>Regular hyperlinks, back button, bookmarking, link sharing</li>
-<li>Functionality on separate pages: <b>Page = Task + Resource</b></li>
-<li>Performant and Lightweight. Speed trumps power.</li>
-<li>Components should have value on their own.</li>
-<li>Low barrier of entry for adopters. Don't require technology buy-in.</li>
-</ul>
-</div>
-
-<div>
-<h2>Demo</h2>
-<a href="http://localhost:8080/index.html">Orion on localhost</a>
-<ul>
-<li>Log in/log out</li>
-<li>OpenID</li>
-<li>Navigator + editor</li>
-<li>Git status & log</li>
-<li>Compare</li>
-<li><a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Launching_your_project_as_a_website">Sites</a></li>
-<li><a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Firebug_Integration">Firebug integration</a></li>
-<li>Search</li>
-<li>Favorites</li>
-</ul>
-</div>
-
-<div>
-<h2>Integration Possibilities</h2>
-<ul>
-	<li>Client-side "plug-ins" : adding commands to existing UI
-	<ul>
-		<li>Integrate with SCMs:</li>
-		<ul>
-			<li>Git is used to speed up self-hosting</li>
-			<li>There is ongoing effort on enabling RTC in Orion</li>
+			<li><b>OpenID</b> - a standard that describes how users can
+				authenticated in a decentralized manner</li>
+			<li><b>OAuth</b> - an open standard for authorization, which
+				allows users to share their private resources stored on one site
+				with another site without having to hand out their credentials</li>
 		</ul>
-	<li>W3C validator, JSLint, ...</li>
-	</ul>
-	</li>
-	<li>Hyperlink integration
-	<ul>
-		<li>Bugzilla, Gerrit, <a href="http://git.eclipse.org/c/e4/org.eclipse.orion.server.git/stats">SCM stats</a></li>
-	</ul>
-	</li>
-	<li>Integrate with browser debuggers:
-	<ul>
-		<li><a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Firebug_Integration">Firebug</a>, WebKit Inspector</li>
-	</ul>
-	</li>
-	<li>Host additional UI components, e.g. OpenSocial Gadgets</li>
-	<li>Server-side
-	<ul>
-		<li><a href="http://open-services.net/">OSLC</a>: Consume and produce server APIs</li>
-	</ul>
-	</li>
-	<li>Web-Based integration
-	<ul>
-		<li><a href="http://initializr.com/">initializr.com</a> - equivalent of "New Project" wizard</li>
-		<li><a href="http://smush.it/">smush.it</a> - lossless "compression" of images</li>
-		<li><a href="http://spritegen.website-performance.org/">CSS Sprite Generator</a></li>
-		<li><a href="jsbeautifier.org">jsbeautifier.org</a> - JavaScript code formatter</li>
-	</ul>
-	</li>
-</ul>
-</div>
+		
+		<p id="footer">
+	</div>
 
-<div>
-<h2>Demo</h2>
-<a href="http://localhost:8080/index.html">Orion on localhost</a>
-<ul>
-<li>Create project on <a href="initializr.com">initializr.com</a></li>
-<li>Import zip</li>
-<li><strike>Disable jslint</strike></li>
-<li>Add <a href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Extending_the_editor_with_a_Plug-in">JSBeautifier</a> plugin</li>
-<li>Go to page (comment in log)</li>
-</ul>
-</div>
-
-<div>
-<h2>Getting Started</h2>
-<ul>
-<li>Homepage / OrionHub: <a href="http://eclipse.org/orion">http://eclipse.org/orion</a></li>
-<li>Installing on localhost: http://wiki.eclipse.org/Orion/How_Tos/Install_Orion_on_Localhost</li>
-<li><a href="http://wiki.eclipse.org/Orion/Getting_the_source#Getting_the_Source_onto_your_computer">Clonning</a>:
-	<ul>
-		<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.client.git</li>
-		<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.server.git</li>
-		<li>https://github.com/eclipse
+	<div>
+		<p id="header">
+		<h2>Assumptions</h2>
 		<ul>
-			<li>orion-client</li>
-			<li>orion-server</li>
+			<li>Software development in a browser
+				<ul>
+					<li>editing</li>
+					<li>navigating folders</li>
+					<li>searching</li>
+					<li>working with SCM</li>
+				</ul>
+			</li>
+			<li>Set of linked web pages, <b>NOT an IDE running in a
+					browser</b>
+				<ul>
+					<li>easy to integrate other functionality even if hosted on
+						different servers</li>
+				</ul>
+			</li>
 		</ul>
-	</li>
-	</ul>
-</li>
+		<p id="footer">
+	</div>
 
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>Why Not an IDE in a Browser?</h2>
+		<a href="http://cloud9ide.com/signin.html">Cloud9 IDE</a><br>
+		<ul>
+			<li>tabs</li>
+			<li>menu items</li>
+			<li>files tree</li>
+			<li>dialogs</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<div>
-<h2>The End</h2>
-<ul>
-<li>Q&amp;A</li>
-<li>Thank you</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>Context: Already in a Browser</h2>
+		<ul>
+			<li>Bug tracking (<a
+				href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=341953">Bugzilla</a>,
+				JIRA, Trac, Lighthouse, Rational RTC)</li>
+			<li>Builds (<a href="https://hudson.eclipse.org/hudson/?">Hudson</a>/Jenkins)</li>
+			<li>Code review (Bugzilla, <a
+				href="http://egit.eclipse.org/r/#change,3008">Gerrit</a>, GitHub)</li>
+			<li>Documentation (<a
+				href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/running_eclipse.htm">Eclipse
+					Help</a>), code snippets (<a href="http://pastebin.com/">pastebin</a>,
+				<a href="https://gist.github.com/gists">Gist</a>), <a
+				href="http://www.google.com">Google</a>
+			</li>
+			<li>Browsing code repositories (<a
+				href="https://github.com/zaza/33rd">GitHub</a>, <a
+				href="http://dev.eclipse.org/viewcvs/viewvc.cgi?view=roots">ViewCVS</a>,
+				Rational RTC)</li>
+			<li>Debugger (<a href="http://getfirebug.com/">Firebug</a>,
+				WebKit Inspector, Developer Tools)</li>
+		</ul>
+		<p id="footer">
+	</div>
 
-<div>
-<h2>Legal Notice</h2>
-<ul>
-<li>IBM and the IBM logo are trademarks or registered trademarks of IBM Corporation, in the United States, other countries or both.</li>
-<li>Java and all Java-based marks, among others, are trademarks or registered trademarks of Sun Microsystems in the United States, other countries or both.</li>
-<li>Eclipse and the Eclipse logo are trademarks of Eclipse Foundation, Inc.</li>
-<li>Other company, product and service names may be trademarks or service marks of others.</li>
-</ul>
-</div>
+	<div>
+		<p id="header">
+		<h2>What's Missing? Not Much</h2>
+		<ul>
+			<li>Code editor</li>
+			<li>Navigator</li>
+			<li>Work with SCM (commit, compare, merge, etc)</li>
+			<li>Indexing - full text search</li>
+			<li>Unit tests</li>
+			<br>
+			<br>
+			<li>Initial focus on web developers working on client-side
+				JavaScript, HTML, CSS</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Design Principles</h2>
+		<ul>
+			<li>Regular hyperlinks, back button, bookmarking, link sharing</li>
+			<li>Functionality on separate pages: <b>Page = Task +
+					Resource</b>
+			</li>
+			<li>Performant and Lightweight. Speed trumps power.</li>
+			<li>Components should have value on their own.</li>
+			<li>Low barrier of entry for adopters. Don't require technology
+				buy-in.</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Demo</h2>
+		<a href="http://localhost:8080/index.html">Orion on localhost</a>
+		<ul>
+			<li>Log in/log out</li>
+			<li>OpenID</li>
+			<li>Navigator + editor</li>
+			<li>Git status & log</li>
+			<li>Compare</li>
+			<li><a
+				href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Launching_your_project_as_a_website">Sites</a>
+			</li>
+			<li><a
+				href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Firebug_Integration">Firebug
+					integration</a>
+			</li>
+			<li>Search</li>
+			<li>Favorites</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Integration Possibilities</h2>
+		<ul>
+			<li>Client-side "plug-ins" : adding commands to existing UI
+				<ul>
+					<li>Integrate with SCMs:</li>
+					<ul>
+						<li>Git is used to speed up self-hosting</li>
+						<li>There is ongoing effort on enabling RTC in Orion</li>
+					</ul>
+					<li>W3C validator, JSLint, ...</li>
+				</ul></li>
+			<li>Hyperlink integration
+				<ul>
+					<li>Bugzilla, Gerrit, <a
+						href="http://git.eclipse.org/c/e4/org.eclipse.orion.server.git/stats">SCM
+							stats</a>
+					</li>
+				</ul></li>
+			<li>Integrate with browser debuggers:
+				<ul>
+					<li><a
+						href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Firebug_Integration">Firebug</a>,
+						WebKit Inspector</li>
+				</ul></li>
+			<li>Host additional UI components, e.g. OpenSocial Gadgets</li>
+			<li>Server-side
+				<ul>
+					<li><a href="http://open-services.net/">OSLC</a>: Consume and
+						produce server APIs</li>
+				</ul></li>
+			<li>Web-Based integration
+				<ul>
+					<li><a href="http://initializr.com/">initializr.com</a> -
+						equivalent of "New Project" wizard</li>
+					<li><a href="http://smush.it/">smush.it</a> - lossless
+						"compression" of images</li>
+					<li><a href="http://spritegen.website-performance.org/">CSS
+							Sprite Generator</a>
+					</li>
+					<li><a href="jsbeautifier.org">jsbeautifier.org</a> -
+						JavaScript code formatter</li>
+				</ul></li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Demo</h2>
+		<a href="http://localhost:8080/index.html">Orion on localhost</a>
+		<ul>
+			<li>Create project on <a href="initializr.com">initializr.com</a>
+			</li>
+			<li>Import zip</li>
+			<li><strike>Disable jslint</strike>
+			</li>
+			<li>Add <a
+				href="http://wiki.eclipse.org/Orion/Getting_Started_with_Orion#Extending_the_editor_with_a_Plug-in">JSBeautifier</a>
+				plugin</li>
+			<li>Go to page (comment in log)</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Getting Started</h2>
+		<ul>
+			<li>Homepage / OrionHub: <a href="http://eclipse.org/orion">http://eclipse.org/orion</a>
+			</li>
+			<li>Installing on localhost:
+				http://wiki.eclipse.org/Orion/How_Tos/Install_Orion_on_Localhost</li>
+			<li><a
+				href="http://wiki.eclipse.org/Orion/Getting_the_source#Getting_the_Source_onto_your_computer">Clonning</a>:
+				<ul>
+					<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.client.git</li>
+					<li>git://git.eclipse.org/gitroot/e4/org.eclipse.orion.server.git</li>
+					<li>https://github.com/eclipse
+						<ul>
+							<li>orion-client</li>
+							<li>orion-server</li>
+						</ul></li>
+				</ul></li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>The End</h2>
+		<ul>
+			<li>Q&amp;A</li>
+			<li>Thank you</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Something to mention</h2>
+		<ul>
+			<li><a
+				href="http://wiki.eclipse.org/Google_Summer_of_Code_2011_Ideas">Google
+					Summer of Code</a>
+			</li>
+			<li><a
+				href="http://wiki.eclipse.org/Eclipse_DemoCamps_Indigo_2011/Krakow">Eclipse
+					DemoCamp Indigo edition</a>
+			</li>
+			<li>Thank you again!</li>
+		</ul>
+		<p id="footer">
+	</div>
+
+	<div>
+		<p id="header">
+		<h2>Legal Notice</h2>
+		<ul>
+			<li>IBM and the IBM logo are trademarks or registered trademarks
+				of IBM Corporation, in the United States, other countries or both.</li>
+			<li>Java and all Java-based marks, among others, are trademarks
+				or registered trademarks of Sun Microsystems in the United States,
+				other countries or both.</li>
+			<li>Eclipse and the Eclipse logo are trademarks of Eclipse
+				Foundation, Inc.</li>
+			<li>Other company, product and service names may be trademarks
+				or service marks of others.</li>
+		</ul>
+		<p id="footer">
+	</div>
 
 </body>
